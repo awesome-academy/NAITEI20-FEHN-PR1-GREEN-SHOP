@@ -38,7 +38,7 @@ const Home = () => {
           <News />
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

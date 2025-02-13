@@ -98,7 +98,7 @@ const ProductCard = ({ product }) => {
         <span className="text-red-500 font-bold text-xl">{product.price.toLocaleString("vi-VN")}₫</span>
         <span className="text-gray-400 line-through text-sm">{product.oldPrice.toLocaleString("vi-VN")}₫</span>
       </div>
-    </div>
+    </div >
   );
 };
 
