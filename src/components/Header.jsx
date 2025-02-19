@@ -15,6 +15,31 @@ import {
 import HeaderImage from "../assets/images/bg-header.png";
 import Logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import { DownOutlined, SmileOutlined } from "@ant-design/icons";
+import { Dropdown, Space } from "antd";
+import { mockProducts } from "../mock/mockProducts";
+// Chuyển danh sách sản phẩm thành menu items
+const items = mockProducts.map((product) => ({
+  label: (
+    <Link to={`/product/${product.id}`} key={product.id}>
+      {product.name}
+    </Link>
+  ),
+  key: product.id,
+}));
+
+// // Tạo danh sách sản phẩm mới
+// const itemsNew = mockProducts
+//   .filter((product) => product.isNew)
+//   .map((product) => ({
+//     label: (
+//       <Link to={`/product/${product.id}`} key={product.id}>
+//         {product.name}
+//       </Link>
+//     ),
+//     key: product.id,
+//   }));
+
 const Header = () => {
   return (
     <header className="bg-white shadow-md text-left ">
@@ -100,32 +125,61 @@ const Header = () => {
                 </li>
                 <li className="bg-active py-[13px]">
                   <div className="hover:text-white">
-                    <span>Trang chủ</span>
+                    <Link to="/" className="text-white">
+                      TRANG CHỦ
+                    </Link>
                   </div>
                 </li>
                 <li className="py-[13px] hover:bg-active hover:text-white">
                   <div>
-                    <span>Giới thiệu</span>
+                    <Link to="/" className="text-white">
+                      GIỚI THIỆU
+                    </Link>
+                  </div>
+                </li>
+                <li className="group relative py-[13px] hover:bg-active hover:text-white">
+                  <Dropdown
+                    menu={{
+                      items,
+                    }}
+                    className="text-white"
+                  >
+                    <Link to="/products">
+                      <Space style={{ fontWeight: "normal" }}>
+                        SẢN PHẨM
+                        <DownOutlined />
+                      </Space>
+                    </Link>
+                  </Dropdown>
+                </li>
+                <li className="group relative py-[13px] hover:bg-active hover:text-white">
+                  <div>
+                    <Dropdown
+                      menu={{
+                        items,
+                      }}
+                    >
+                      <Link to="/products">
+                        <Space style={{ fontWeight: "normal" }}>
+                          SẢN PHẨM MỚI
+                          <DownOutlined />
+                        </Space>
+                      </Link>
+                    </Dropdown>
                   </div>
                 </li>
                 <li className="group relative py-[13px] hover:bg-active hover:text-white">
                   <div>
-                    <span>Sản phẩm</span>
+                    <Link to="/news" className="text-white">
+                      TIN TỨC
+                    </Link>
                   </div>
                 </li>
                 <li className="group relative py-[13px] hover:bg-active hover:text-white">
                   <div>
-                    <span>Sản phẩm mới</span>
-                  </div>
-                </li>
-                <li className="group relative py-[13px] hover:bg-active hover:text-white">
-                  <div>
-                    <span>Tin tức</span>
-                  </div>
-                </li>
-                <li className="group relative py-[13px] hover:bg-active hover:text-white">
-                  <div>
-                    <span>Liên hệ</span>
+                    <Link to="/" className="text-white">
+                      LIÊN HỆ
+                    </Link>
                   </div>
                 </li>
               </ul>

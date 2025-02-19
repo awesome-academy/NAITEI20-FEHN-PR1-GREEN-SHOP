@@ -8,6 +8,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-1.png"],
     rating: 4.5,
     isNew: true,
+    descriptions: "Cây Danh Dự tượng trưng cho sự vinh quang và thành đạt.",
+    categories: [1, 2],
+    colors: [1], // Green
   },
   {
     id: "2",
@@ -18,6 +21,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-2.png"],
     rating: 4.0,
     isNew: false,
+    descriptions: "Cây Dứa Nhỏ thích hợp để bàn làm việc, mang lại cảm giác tươi mát.",
+    categories: [4],
+    colors: [2, 3], // Yellow, Red
   },
   {
     id: "3",
@@ -28,6 +34,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-3.png"],
     rating: 4.5,
     isNew: false,
+    descriptions: "Cây Cọ Ta giúp lọc không khí và tạo không gian xanh mát.",
+    categories: [3, 7],
+    colors: [1, 4], // Green, Blue
   },
   {
     id: "4",
@@ -38,6 +47,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-4.png"],
     rating: 4.0,
     isNew: true,
+    descriptions: "Cây Dạ Lam có màu sắc đẹp mắt và dễ chăm sóc.",
+    categories: [5],
+    colors: [4], // Blue
   },
   {
     id: "5",
@@ -48,6 +60,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-5.png"],
     rating: 3.5,
     isNew: false,
+    descriptions: "Cây Danh Dự này mang lại sự bình yên và may mắn cho gia đình.",
+    categories: [2, 6],
+    colors: [1, 3], // Green, Red
   },
   {
     id: "6",
@@ -58,6 +73,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-6.png"],
     rating: 3.0,
     isNew: false,
+    descriptions: "Cây Dứa Nhỏ giúp tăng sự tập trung và thư giãn cho mắt.",
+    categories: [4],
+    colors: [2], // Yellow
   },
   {
     id: "7",
@@ -68,6 +86,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-7.png"],
     rating: 3.5,
     isNew: false,
+    descriptions: "Cây Trầu Bà dễ trồng, giúp thanh lọc không khí hiệu quả.",
+    categories: [7],
+    colors: [1, 2], // Green, Yellow
   },
   {
     id: "8",
@@ -78,6 +99,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-8.png"],
     rating: 4.5,
     isNew: true,
+    descriptions: "Cây Kim Ngân mang lại phong thủy tốt và sự thịnh vượng.",
+    categories: [1, 3],
+    colors: [1], // Green
   },
   {
     id: "9",
@@ -88,6 +112,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-9.png"],
     rating: 4.0,
     isNew: false,
+    descriptions: "Cây Ngọc Ngân có màu sắc tinh tế, phù hợp cho trang trí nội thất.",
+    categories: [6],
+    colors: [3, 4], // Red, Blue
   },
   {
     id: "10",
@@ -98,6 +125,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-10.png"],
     rating: 3.5,
     isNew: false,
+    descriptions: "Cây Hồng Môn tượng trưng cho tình yêu và sự đam mê.",
+    categories: [2],
+    colors: [3], // Red
   },
   {
     id: "11",
@@ -108,6 +138,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-11.png"],
     rating: 3.0,
     isNew: false,
+    descriptions: "Cây Cau Tiểu Trâm giúp thanh lọc không khí và dễ chăm sóc.",
+    categories: [5],
+    colors: [1, 2],
   },
   {
     id: "12",
@@ -118,6 +151,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-12.png"],
     rating: 5.0,
     isNew: false,
+    descriptions: "Cây Lưỡi Hổ giúp thanh lọc không khí và tăng sức khỏe phong thủy.",
+    categories: [6],
+    colors: [2, 4],
   },
   {
     id: "13",
@@ -128,6 +164,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-13.png"],
     rating: 4.0,
     isNew: false,
+    descriptions: "Cây Phát Tài mang lại sự thịnh vượng và may mắn.",
+    categories: [4],
+    colors: [1],
   },
   {
     id: "14",
@@ -138,6 +177,9 @@ export const mockProducts = [
     images: ["/images/spx/spx2-14.png"],
     rating: 4.5,
     isNew: false,
+    descriptions: "Cây Sen Đá nhỏ gọn, thích hợp cho trang trí bàn làm việc.",
+    categories: [3, 5],
+    colors: [4],
   },
   {
     id: "15",
@@ -148,5 +190,8 @@ export const mockProducts = [
     images: ["/images/spx/spx2-15.png"],
     rating: 3.5,
     isNew: false,
+    descriptions: "Cây Xương Rồng tượng trưng cho sự mạnh mẽ và kiên cường.",
+    categories: [1, 6],
+    colors: [3],
   },
 ];
