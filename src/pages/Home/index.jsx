@@ -3,11 +3,13 @@ import PromotionalProducts from "../../components/PromotionalProducts";
 import OutstandingProducts from "../../components/OutstandingProducts";
 import FrequentlyPurchasedProducts from "../../components/FrequentlyPurchasedProducts";
 import News from "../../components/News";
+import Popup from "../../components/Popup";
 
 const Home = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
+      <Popup />
       <div className="w-full">
         <img src="/images/slide-1920x590.png" alt="Logo" className="w-full h-auto object-cover" />
       </div>
